@@ -1,4 +1,4 @@
-name: Documentation
+name: Greeter
 
 on:
   push:
@@ -7,7 +7,8 @@ on:
     branches: [ $default-branch ]
 
 jobs:
-  documentation:
+  call-workflow:
+    name: Call Workflow
     uses: nicklasfrahm-dev/.github/.github/workflows/documentation.yml@main
     secrets: inherit
     with:

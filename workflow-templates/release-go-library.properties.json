@@ -1,5 +1,5 @@
 {
-  "name": "Release Go library",
+  "name": "Release Go Library",
   "description": "This workflow is used to version and release a Go library.",
   "iconName": "octicon rocket",
   "categories": [
