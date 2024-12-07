@@ -1,7 +1,7 @@
 {
     "name": "Documentation workflow",
     "description": "This workflow is used to generate and publish documentation for a project.",
-    "iconName": "book",
+    "iconName": "octicon book",
     "categories": [
         "Documentation"
     ],
