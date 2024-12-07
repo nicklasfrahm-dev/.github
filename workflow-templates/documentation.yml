@@ -1,0 +1,14 @@
+name: Documentation
+
+on:
+  push:
+    branches: [ $default-branch ]
+  pull_request:
+    branches: [ $default-branch ]
+
+jobs:
+  documentation:
+    uses: nicklasfrahm-dev/.github/.github/workflows/documentation.yml@main
+    secrets: inherit
+    with:
+      name: ${{ github.actor }}
