@@ -1,0 +1,11 @@
+{
+    "name": "Greeter",
+    "description": "This workflow is used to greet a person and list files in the repository.",
+    "iconName": "octicon megaphone",
+    "categories": [
+        "Documentation"
+    ],
+    "filePatterns": [
+        ".*\\.md"
+    ]
+}

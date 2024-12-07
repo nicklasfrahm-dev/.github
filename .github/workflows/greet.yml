@@ -1,4 +1,4 @@
-name: Documentation
+name: Greet
 
 on:
   workflow_call:
@@ -9,7 +9,8 @@ on:
         required: true
 
 jobs:
-  build:
+  greet:
+    name: Greet
     runs-on: ubuntu-latest
     steps:
       - name: Clone repository

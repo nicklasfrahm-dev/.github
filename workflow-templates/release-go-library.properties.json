@@ -1,0 +1,14 @@
+{
+  "name": "Release Go library",
+  "description": "This workflow is used to version and release a Go library.",
+  "iconName": "octicon rocket",
+  "categories": [
+      "Go",
+      "Release"
+  ],
+  "filePatterns": [
+      "go.mod",
+      "go.sum",
+      ".*\\.go"
+  ]
+}
