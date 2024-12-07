@@ -6,8 +6,6 @@ This repository contains special workflows and documentation that is used to cus
 
 - [**Release Go Library**](.github/workflows/release-go-library.yml)  
   This workflow creates a new release for a Go library and publishes it to GitHub.
-- [**Greeter**](.github/workflows/greeter.yml)  
-  This workflow greets the user who triggered the workflow and list the files in the repository.
 
 ## Development
 
