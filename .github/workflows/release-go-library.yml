@@ -11,20 +11,20 @@ jobs:
       contents: read
       checks: write
     steps:
-      - name: 📋 Checkout
+      - name: Checkout 📋
         uses: actions/checkout@v4
 
-      - name: 🔍 Lint Markdown
+      - name: Lint Markdown 🔍
         uses: nosborn/github-action-markdown-cli@v3
         with:
           files: .
 
-      - name: 🛠️ Setup Go
+      - name: Setup Go 🛠️
         uses: actions/setup-go@v5
         with:
           go-version: stable
 
-      - name: 🔍 Lint code
+      - name: Lint code 🔍
         uses: golangci/golangci-lint-action@v6
 
   test:
@@ -34,12 +34,12 @@ jobs:
       contents: write
       pull-requests: write
     steps:
-      - name: 📋 Checkout
+      - name: Checkout 📋
         uses: actions/checkout@v4
         with:
           fetch-depth: 10
 
-      - name: 🧪 Test with coverage
+      - name: Test with coverage 🧪
         uses: gwatts/go-coverage-action@v2
         with:
           cover-pkg: ./...
@@ -57,10 +57,10 @@ jobs:
       pull-requests: write
       issues: write
     steps:
-      - name: 📋 Checkout
+      - name: Checkout 📋
         uses: actions/checkout@v4
 
-      - name: ✅ Create release
+      - name: Create release ✅
         uses: docker://ghcr.io/codfish/semantic-release-action:v3
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
