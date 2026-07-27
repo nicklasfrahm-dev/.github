@@ -12,7 +12,7 @@ jobs:
       checks: write
     steps:
       - name: Checkout 📋
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Lint Markdown 🔍
         uses: nosborn/github-action-markdown-cli@v3
@@ -20,12 +20,12 @@ jobs:
           files: .
 
       - name: Setup Go 🛠️
-        uses: actions/setup-go@v5
+        uses: actions/setup-go@v7
         with:
           go-version: stable
 
       - name: Lint code 🔍
-        uses: golangci/golangci-lint-action@v6
+        uses: golangci/golangci-lint-action@v9
 
   test:
     name: Test
@@ -35,7 +35,7 @@ jobs:
       pull-requests: write
     steps:
       - name: Checkout 📋
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           fetch-depth: 10
 
@@ -58,7 +58,7 @@ jobs:
       issues: write
     steps:
       - name: Checkout 📋
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Create release ✅
         uses: docker://ghcr.io/codfish/semantic-release-action:v3
